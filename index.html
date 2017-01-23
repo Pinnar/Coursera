@@ -1,31 +1,121 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OUR MENU :) </title>
-<link rel="stylesheet" href="hasenepinar.css">
-</head>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>David Chu's China Bistro</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="hasenepinar.css">
+		<link href="https://fonts.googleapis.com/ css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+	</head>
 
 <body>
-<h1> Our Menu </h1>
-	<section class="col-md-6 col-s-12">
-		<div> 
-			<h3 id="Chicken">Chicken</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel hendrerit ipsum. Nam bibendum pretium risus. Ut aliquet mi non fringilla pulvinar. Proin eleifend augue justo. Integer lectus velit, malesuada non semper a, mattis vel mauris. Morbi pharetra dignissim magna, eu placerat mauris. Nam dolor ex, finibus eu justo non, bibendum efficitur est. </p> 
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="hasenepinar.html" class="pull-left visible-md visible-lg">
+					<div id="logo-img" alt="Logo image"></div> 
+				</a>
+				<div class="navbar-brand">
+					<a href="hasenepinar.html"><h1>David Chu's China Bistro</h1></a>
+					<p>
+						<img src="images/star-k-logo.png" alt="Kosher certification">
+						<span>kosher Certified</span>
+					</p>
+				</div>
+				
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+     			 </button>
+			</div>
+			
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li class="visible-xs active">
+						<a href="hasenepinar.html">
+							<span class="glyphicon glyphicon-home"></span> Home
+						</a>
+					</li>
+				
+					<li>
+						<a href="menu-categories.html">
+							<span class="glyphicon glyphicon-cutlery" ></span><br class="hidden-xs"> Menu </a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-info-sign" ></span><br class="hidden-xs"> About </a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards </a>
+					</li>
+					<li id="phone" class="hidden-xs">
+						<a href="tel:410-602-5008">
+							<span>410-602-5008</span></a><div>* We Deliver</div> 
+					</li>
+				</ul>
+			</div>
+			
 		</div>
-	</section>
-	<section  class="col-md-6 col-s-12"  >
-		<div>
-			<h3 id="Beef">Beef</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel hendrerit ipsum. Nam bibendum pretium risus. Ut aliquet mi non fringilla pulvinar. Proin eleifend augue justo. Integer lectus velit, malesuada non semper a, mattis vel mauris. Morbi pharetra dignissim magna, eu placerat mauris. Nam dolor ex, finibus eu justo non, bibendum efficitur est.  </p>
+	</nav>
+</header>
+<div id="call-btn" class="visible-xs">
+	<a class="btn" href="tel:410-602-5008">
+		<span class="glyphicon glyphicon-earphone"></span>410-602-5008
+	</a>
+</div>
+<div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+<div id="main-content" class="container">
+	<div class="jumbotron">
+		<img src="images/jumbotron_768.jpg" alt="Picture of Restaurant" class="img-responsive visible-xs">
+	</div>
+	
+	<div id="home-tiles" class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
 		</div>
-	</section>
-	<section class="col-md-12 col-s-12" >
-		<div>
-			<h3 id="Sushi">Sushi</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel hendrerit ipsum. Nam bibendum pretium risus. Ut aliquet mi non fringilla pulvinar. Proin eleifend augue justo. Integer lectus velit, malesuada non semper a, mattis vel mauris. Morbi pharetra dignissim magna, eu placerat mauris. Nam dolor ex, finibus eu justo non, bibendum efficitur est.  </p>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
 		</div>
-	</section>
+		<div class="col-md-4 col-sm-12 col-xs-12">
+			<a href="https://www.google.com.tr/maps/place/Cafera%C4%9Fa,+G%C3%BCl+Sk.,+34710+Kad%C4%B1k%C3%B6y%2F%C4%B0stanbul/@40.9815128,29.0237485,17.29z/data=!4m5!3m4!1s0x14cab8602ac65c5f:0xf5bd289e6fbc63d8!8m2!3d40.9815064!4d29.0254177?hl=tr" target="_blank"><div id="map-tile"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2465.1612614804594!2d29.02374846811475!3d40.98151279650905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab8602ac65c5f%3A0xf5bd289e6fbc63d8!2zQ2FmZXJhxJ9hLCBHw7xsIFNrLiwgMzQ3MTAgS2FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1484583562760" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> <span>map</span></div></a>
+		</div>
+	</div>
+	
+</div>
+	
+<footer class="panel-footer">
+	<div class="container">
+		<div class="row">
+			<section id="hours" class="col-sm-4">
+				<span>Hours:</span><br>Sun-Thurs: 11.15am - 10.00pm<br> Saturday closed <hr class="visible-xs">
+			</section>
+			<section id="address" class="col-sm-4">
+				<span>Address:</span><br>7105 Reisterstown Road<br> Baltimore, MD 21215 <p>Delivery area within 3-4miles, with minimum order of $20 plus $3 charge for all deliveries.</p> <hr class="visible-xs">
+			</section>
+			<section id="testimonials" class="col-sm-4">
+				<p>The best Chinese Reastaurant in the town..</p>
+				<p>Yani bukadar olur. Nasıl olur yani anca bukadar.. <br>Bundan iyisi can sağlığı walla. <br>Geberene kadar yiyin! </p>
+			</section>
+		</div>
+		<div class="text-center">&copy; Copyright HASENEPINAR 2016</div>
+	</div>
+	
+</footer>	
+	
+		
 </body>
 </html>
