@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-size: 16px;
+	color: black ;
+	background-color: darkred; 
+	font-family: 'Oxygen', sans-serif;
+	
+}
+h2 {
+	color: white;
+	font-style: italic;
+}
+#P-header-nav{
+	background-color: #848E5A ;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-brand {
+	height: 80px;
+}
+
+.navbar-brand h1{ /*Restaurent Name*/
+	color: #272A1A;
+	text-shadow: 2px 1px 2px #fff;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navbar-brand a:hover {
+	text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle  {
+	border: 1px solid darkred;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+.navbar-header .icon-bar {
+	border: 1px solid darkred;
+}
+
+li {
+	text-align: center;
+	font-size: 1.2em;
+	color: darkred;
+	border: 1px solid black;
+}
+
+a {
+	text-decoration: none;
+}
+
+li:hover {
+	text-decoration: none;
+	background: #E7E7E7;
+}
+
+#icerik-chicken, #icerik-beef, #icerik-sushi{
+	background-color: #848E5A;
+	margin-bottom: 20px;
+	padding: 0 20px 10px 20px;
+	border: 2px solid #272A1A;
+}
+
+h4 {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #272A1A;
+}
+
+@media (max-width: 767px) {
+	#icerik-chicken, #icerik-beef, #icerik-sushi{
+		width: 400px;
+		margin: 0 auto 30px;
+	}
+	h1 {
+		font-size: 2.5em
+	}
+	
+	ul {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	/*li {
+		margin-top: 5px;
+	}	*/
+	
+	.navbar-default .navbar-nav > li > a{
+		color: darkred;
+		text-decoration: none;
+	}
+	
+
+	
+}
